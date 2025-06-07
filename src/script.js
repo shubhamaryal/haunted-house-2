@@ -5,7 +5,6 @@ import { Timer } from "three/addons/misc/Timer.js";
 import GUI from "lil-gui";
 import { ssrModuleExportsKey } from "vite/module-runner";
 
-
 /**
  * Base
  */
@@ -392,14 +391,14 @@ for (const grave of graves.children) {
   grave.receiveShadow = true;
 }
 
-// Mapping 
-directionalLight.shadow.mapSize.width = 256
+// Mapping
+directionalLight.shadow.mapSize.width = 256;
 directionalLight.shadow.mapSize.height = 256;
 directionalLight.shadow.camera.top = 8;
 directionalLight.shadow.camera.right = 8;
 directionalLight.shadow.camera.bottom = -8;
-directionalLight.shadow.camera.left = -8;  
-directionalLight.shadow.camera.near = 1; 
+directionalLight.shadow.camera.left = -8;
+directionalLight.shadow.camera.near = 1;
 directionalLight.shadow.camera.far = 20;
 
 ghost1.shadow.mapSize.width = 256;
@@ -410,7 +409,7 @@ ghost2.shadow.mapSize.width = 256;
 ghost2.shadow.mapSize.height = 256;
 ghost2.shadow.camera.far = 10;
 
-ghost3.shadow.mapSize.width = 256; 
+ghost3.shadow.mapSize.width = 256;
 ghost3.shadow.mapSize.height = 256;
 ghost3.shadow.camera.far = 10;
 
@@ -432,7 +431,7 @@ sky.material.uniforms["sunPosition"].value.set(0.3, -0.038, -0.95);
  * Fog
  */
 // scene.fog = new THREE.Fog('#ff0000', 10, 13);
-scene.fog = new THREE.FogExp2('#02343f', 0.1);
+scene.fog = new THREE.FogExp2("#02343f", 0.1);
 
 /**
  * Animate
